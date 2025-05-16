@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Lucida Sans", sans-serif;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-areas: 
+	    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+	gap: 10px;
+	background-color: white;
+	padding: 10px;
+}
+
+.grid-container > div{
+	padding: 10px;
+	font-size: 16px;
+}
+
+.item1{
+    grid-area: header;
+    background-color: purple;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.item2{
+	grid-area: menu;
+}
+
+.item2 ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.item2 li{
+	padding: 15px 40px;
+	margin-bottom: 9px;
+	background-color: lightblue;
+	color: white;
+}
+
+.item2 li:hover{
+	color: purple;
+	text-decoration: underline;
+}
+
+.item3{
+	grid-area: main;
+}
+
+.item3 > h1{
+	padding: 10px;
+	margin-bottom: 9px;
+   font-size: 35px;
+}
+
+.item3 > p{
+	margin-bottom: 7px;
+	margin-left: 9px;
+}
+
+.item4{
+	grid-area: right;
+	border: 2px solid lightblue;
+}
+
+.item4 > h2{
+	font-size: 30px;
+	padding: 15px;
+	margin-bottom: 9px;
+}
+
+.item4 ul{
+	list-style-type: disc;
+	margin: 9px;
+	padding: 10px;
+}
+
+.item4 li{
+	margin-bottom: 5px;
+    padding: 5px;
+}
+
+.item5{
+	grid-area: footer;
+	background-color: lightblue;
+	color: white;
+	text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+	.item1{grid-area: 1 / span 6;}
+	.item2{grid-area: 2 / span 6;}
+	.item3{grid-area: 3 / span 6;}
+    .item4{grid-area: 4 / span 6;}
+    .item5{grid-area: 5 / span 6;}
+}
