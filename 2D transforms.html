@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		div{
+			width: 300px;
+			height: 100px;
+			margin:120px;
+			background: beige;
+			border: 2px solid pink;
+		}
+		div:hover{
+			transform: translate(50px, 100px);
+		}
+		.scale{
+			margin: 80px;
+			width: 150px;
+			height: 20px;
+			background-color: ghostwhite;
+			border: 2px solid darkred;
+		}
+		.scale:hover{
+			transform: scale(2,3);
+		}
+		.wide{
+			margin: 120px 20px;
+			width: 200px;
+			height: 100px;
+			background: beige;
+			border: 3px solid black;
+		}
+		.wide:hover{
+			transform: scaleX(2);
+		}
+		.length{
+			margin: 50px;
+			width: 200px;
+			height: 100px;
+			background: ghostwhite;
+			border: 2px solid black;
+		}
+		.length:hover{
+			transform: scaleY(2);
+		}
+		.fnc{
+			margin: 120px;
+			width: 120px;
+			height: 50px;
+			background: yellow;
+			border: 2px solid green;
+		}
+		.fnc:hover{
+			transform: skew(20deg, 10deg);
+		}
+		.all{
+			margin: 120px;
+			width: 120px;
+			height: 50px;
+			background: yellow;
+			border: 2px solid green;
+		}
+		.all:hover{
+			transform: matrix(2, 0.3, 0.5, 2, 2, 2);
+		}
+	</style>
+</head>
+<body>
+<div>The element is moved to the right and bottom from its current position</div>
+<div class="scale">This is an element.</div>
+<div class="wide">This div element is wider than its original width</div>
+<div class="length">This div element is lengthy than its original width</div>
+<div class="fnc"> This is Skew</div>
+<div class="all">This is matrix.</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		div{
+			display:inline-block;
+			margin: 10px;
+		}
+		#grad{
+			height: 200px;
+			width: 250px;
+			background-image: conic-gradient(red, yellow, blue, green, black);
+		}
+		#grad1{
+			height: 200px;
+			width: 250px;
+			background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+		}
+		#grad2{
+			height: 200px;
+			width: 250px;
+			background-image: conic-gradient(red, yellow, blue, green, black);
+			border-radius: 50%;
+		}
+		#grad3{
+			height: 200px;
+			width: 250px;
+			background-image: conic-gradient(at 60% 45%, red, yellow, green);
+			border-radius: 50%;
+		}
+		#grad4{
+			height: 200px;
+			width: 250px;
+			background-image: repeating-conic-gradient(red 10% , yellow 20%);
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+<div id="grad"></div>
+<div id="grad1"></div>
+<div id="grad2"></div>
+<div id="grad3"></div>
+<div id="grad4"></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.grad{
+			width: 200px;
+			height: 200px;
+			margin: 5px;
+			background-image: linear-gradient(red, yellow);
+		}
+		.gray{
+			width: 200px;
+			height: 200px;
+			margin: 5px;
+			background-image: linear-gradient(to right, red, yellow);
+		}
+		.three{
+			width: 200px;
+			height: 200px;
+			margin: 5px;
+			background-image: linear-gradient(to bottom right, red, yellow, green);
+		}
+		.angle{
+			width: 200px;
+			height: 200px;
+			margin: 5px;
+			background-image: linear-gradient(180deg, red, yellow);
+		}
+		.blur{
+			width: 200px;
+			height: 200px;
+			margin: 5px;
+			background-image: linear-gradient(to right, rgba(255,0,0,0.5), rgba(255,0,0,0.1));
+		}
+		.repeat{
+			width: 200px;
+			height: 200px;
+			margin: 5px;
+			background-image: repeating-linear-gradient(red, yellow 20%, green 30%);
+		}
+	</style>
+</head>
+<body>
+<div class="grad"></div>
+<div class="gray"></div>
+<div class="three"></div>
+<div class="angle"></div>
+<div class="blur"></div>
+<div class="repeat"></div>
+</body>
+</html>

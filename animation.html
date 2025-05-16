@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		div{
+			display: inline-block;
+			margin: 10px;
+		}
+		.anime{
+			width: 150px;
+			height: 100px;
+			background-color: darkred;
+			animation-name: example;
+			animation-duration: 5s;
+			animation-delay: 2s;
+		}
+		@keyframes example{
+			from{background-color: darkred;}
+			to{background-color: yellow;}
+		}
+		.main{
+			width: 150px;
+			height: 100px;
+			background-color: darkred;
+			animation-name: view;
+			animation-duration: 5s;
+			animation-iteration-count: 4;
+		}
+
+		@keyframes view{
+			0%{background-color: indianred;}
+			25%{background-color: yellow;}
+			50%{background-color: blue;}
+			100%{background-color: green;}
+		}
+
+		.show{
+			width: 150px;
+			height: 100px;
+			position: relative;
+			background-color: darkred;
+			animation-name: keep;
+			animation-duration: 5s;
+			animation-direction: alternate-reverse;
+		}
+
+		@keyframes keep{
+			0%{background-color: indianred; left: 0px; top: 0px;}
+			25%{background-color: yellow; left: 200px; top: 0px;}
+			50%{background-color: blue; left: 200px; top: 200px;}
+			75%{background-color: green; left: 0px; top: 200px;}
+			100%{background-color: coral; left: 0px; top: 0px;}
+		}
+	</style>
+</head>
+<body>
+<div class="anime"></div>
+<div class="main"></div>
+<div class="show"></div>
+</body>
+</html>
